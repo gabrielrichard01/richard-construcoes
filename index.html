@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="shortcut icon" href="./img/icone/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Richard Construções</title>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title">Richard Construções</h1>
+            <buttons class="navbar-toggler mb-2" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </buttons>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-cone-striped"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#promocoes" class="nav-link">
+                            <i class="bi bi-bag-fill"></i>
+                            Promoções
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#orcamento" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fazer orçamento
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+            <section id="sobre">
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img src="./img/slide/slide1.jpg" alt="Foto do espaço interno da loja">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/slide/slide2.jpg" alt="tintas">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="./img/slide/slide3.jpg" alt="Material de ferramentas">
+                        </div>
+                    </div>
+                    <buttons class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </buttons>
+                    <buttons type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </buttons>
+                    <div class="carousel-indicators">
+                        <buttons type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></buttons>
+                        <buttons type="button" data-bs-target="#carousel" data-bs-slide-to="1"></buttons>
+                        <buttons type="button" data-bs-target="#carousel" data-bs-slide-to="2"></buttons>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="./img/slide/slide1.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do restaurante">
+                            </div>
+                            <div class="col-md-7 mt-3 mt-md-0">
+                                <h2 class="section-title">Sobre <span>a Loja</span></h2>
+                                <p>
+                                    A loja mais perfeita para você, aqui você pode encontrar tudo o que mais precisa para a sua construção ficar perfeita. 
+                                </p>
+                                <h3 class="section-title">Aqui você <span>vai Encontra</span></h3>
+                                <ul>
+                                    <li>Material necessário para a sua obra.</li>
+                                    <li>Funcionários prestativos para ajudar no que for preciso.</li>
+                                    <li>Cobrimos qualquer orçamento</li>
+                                    <li>Entregamos em todo estado de São Paulo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="produtos" class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5"><span>Produtos</span></h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#pisos" class="fw-bold text-start nav-link text-colored active">Pisos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#eletrica" class="fw-bold text-start nav-link text-colored ">Eletrica</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#tintas" class="fw-bold text-start nav-link text-colored ">Tintas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#epis" class="fw-bold text-start nav-link text-colored ">EPIS</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#ferramentas" class="fw-bold text-start nav-link text-colored ">Ferramentas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#impermeabilizantes" class="fw-bold text-start nav-link text-colored ">Impermeabilizantes</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="pisos">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./img/pisos/madeira.jpg" alt="madeira" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Madeira 55x55</h5>
+                                            <p class="preco">
+                                                R$ <span>32,90</span> p/m&sup2;
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/pisos/mosaico.jpg" alt="mosaico" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Mosaico Verde 32x32</h5>
+                                            <p class="preco">
+                                                R$ <span>22,90</span> p/m&sup2;
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/pisos/masaico-2.jpg" alt="mosaico" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Mosaico branco 32x32</h5>
+                                            <p class="preco">
+                                                R$ <span>45,90</span> p/m&sup2;
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/pisos/rustico.jpg" alt="rustico" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Rustico</h5>
+                                            <p class="preco">
+                                                R$ <span>29,90</span> p/m&sup2;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="eletrica">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./img/eletrica/caixa-luz.jpg" alt="caixa de liz" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Caixa de luz</h5>
+                                            <p class="preco">
+                                                R$ <span>1,99</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/eletrica/disjuntor.jpg" alt="disjuntor" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Disjuntor</h5>
+                                            <p class="preco">
+                                                R$ <span>10,00</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/eletrica/fita-led.jpg" alt="fita led" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Fita Led</h5>
+                                            <p class="preco">
+                                                R$ <span>5,90</span>p/m&sup2;
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/eletrica/painel.jpg" alt="painel" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Painel</h5>
+                                            <p class="preco">
+                                                R$ <span>56,90</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="tintas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./img/tistas/spray.jpg" alt="spray" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Spray</h5>
+                                            <p class="preco">
+                                                R$ <span>8,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/tistas/tinta-coral.jpg" alt="etinta coral" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Tinta Coral</h5>
+                                            <p class="preco">
+                                                R$ <span>490,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/tistas/tinta-shewin.jpg" alt="tinta SW" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Tinta SW</h5>
+                                            <p class="preco">
+                                                R$ <span>399,99</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/tistas/tinta-suvinil.jpg" alt="Tinta suvinil" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Tinta Suvinil</h5>
+                                            <p class="preco">
+                                                R$ <span>120,90</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="epis">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./img/epis/bota.jpg" alt="bota" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Bota</h5>
+                                            <p class="preco">
+                                                R$ <span>40,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/epis/capacete.jpg" alt="Capacete" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Capacete</h5>
+                                            <p class="preco">
+                                                R$ <span>29,00</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/epis/luva.jpg" alt="luva" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Luva</h5>
+                                            <p class="preco">
+                                                R$ <span>9,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/epis/mascara.jpg" alt="mascara" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Mascára</h5>
+                                            <p class="preco">
+                                                R$ <span>7,90</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="ferramentas">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./img/ferramentas/enxada.jpg" alt="enxada" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Enxada</h5>
+                                            <p class="preco">
+                                                R$ <span>77,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/ferramentas/furadeira.png" alt="furadeira" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Furadeira</h5>
+                                            <p class="preco">
+                                                R$ <span>156,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/ferramentas/marreta.jpg" alt="Marreta" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Marreta</h5>
+                                            <p class="preco">
+                                                R$ <span>37,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/ferramentas/martelo.jpg" alt="martelo" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Martelo</h5>
+                                            <p class="preco">
+                                                R$ <span>32,90</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="impermeabilizantes">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img src="./img/impermeabilizantes/bautech.jpg" alt="bautech" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Bautech</h5>
+                                            <p class="preco">
+                                                R$ <span>120,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/impermeabilizantes/quartzolit.jpg" alt="quatzolit" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Quatzolit</h5>
+                                            <p class="preco">
+                                                R$ <span>32,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/impermeabilizantes/vedacit.jpg" alt="vedacit" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Vedacit</h5>
+                                            <p class="preco">
+                                                R$ <span>55,90</span>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img src="./img/impermeabilizantes/viaplus.png" alt="viapol" class="d-block w-100">
+                                            <h5 class="text-colored fw-bold mt-2">Viapol</h5>
+                                            <p class="preco">
+                                                R$ <span>152,90</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="promocoes">
+                <div class="container">
+                    <div class="title-card">
+                        <h2 class="section-title text-center mb-5"><span>Promoções</span></h2>
+                    </div>
+                    <div class="card-promocoes">
+                        <div class="cartao">
+                            <div class="title-promocoes text-center pt-3">
+                                <h5 class="fw-bold">Argamassa</h5>
+                            </div>
+                            <div class="imagem-promocoes">
+                                <img src="./img/promocoes/argamassa.jpg" alt="argamassa">
+                            </div>
+                            <div class="preco-promocoes">
+                                <p class="preco">
+                                    R$ <span>11,90</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cartao">
+                            <div class="title-promocoes text-center pt-3">
+                                <h5 class="fw-bold">Cimento</h5>
+                            </div>
+                            <div class="imagem-promocoes">
+                                <img src="./img/promocoes/cimento.png" alt="cimento">
+                            </div>
+                            <div class="preco-promocoes">
+                                <p class="preco">
+                                    R$ <span>18,90</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cartao">
+                            <div class="title-promocoes text-center pt-3">
+                                <h5 class="fw-bold">Conduit</h5>
+                            </div>
+                            <div class="imagem-promocoes">
+                                <img src="./img/promocoes/conduit.jpg" alt="conduit">
+                            </div>
+                            <div class="preco-promocoes">
+                                <p class="preco">
+                                    R$ <span>1,90</span>p/m
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cartao">
+                            <div class="title-promocoes text-center pt-3">
+                                <h5 class="fw-bold">Gabinete de banheiro</h5>
+                            </div>
+                            <div class="imagem-promocoes">
+                                <img src="./img/promocoes/gabinete-banheiro.jpg" alt="gabinete de banheiro">
+                            </div>
+                            <div class="preco-promocoes">
+                                <p class="preco">
+                                    R$ <span>490,90</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cartao">
+                            <div class="title-promocoes text-center pt-3">
+                                <h5 class="fw-bold">Piso</h5>
+                            </div>
+                            <div class="imagem-promocoes">
+                                <img src="./img/promocoes/piso.jpg" alt="piso">
+                            </div>
+                            <div class="preco-promocoes">
+                                <p class="preco">
+                                    R$ <span>15,99</span>p/m&sup2;
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cartao">
+                            <div class="title-promocoes text-center pt-3">
+                                <h5 class="fw-bold">Argamassa</h5>
+                            </div>
+                            <div class="imagem-promocoes">
+                                <img src="./img/promocoes/tubo.jpg" alt="tubo">
+                            </div>
+                            <div class="preco-promocoes">
+                                <p class="preco">
+                                    R$ <span>4,90</span>p/m
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="orcamento">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="section-title text-center mt-5 mb-3">Fazer <span>orçamento</span></h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-7 mb-5">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                    <input type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label fw-bold text-colored">Seu telefone</label>
+                                    <input type="tel" id="telefone" name="telefone" class="form-control" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                    <textarea class="form-control" id="mensagem"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-danger fw-bold">Enviar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                                    Redes Sociais
+                                </h3>
+                                <ul class="social-links">
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-facebook text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5 ms-2 me-2">
+                                        <a href="#">
+                                            <i class="bi bi-instagram text-colored"></i>
+                                        </a>
+                                    </li>
+                                    <li class="fs-5">
+                                        <a href="#">
+                                            <i class="bi bi-whatsapp text-colored"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row mt-4">
+                                <h3 class="section-title fs-4 text-colored">
+                                    <i class="bi bi-cursor-fill"></i>
+                                    Endereço
+                                </h3>
+                                <p>
+                                    Rua Teste Exemplo n&deg; 145, Bairro bootstrap - São Paulo - SP
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p class="text-center fw-bold pt-2 pb-2">
+                2023 &copy; Richard Construções - Todos os direitos reservados
+            </p>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
+    <script src="./lib/cdn.jsdelivr.net_npm_bootstrap@5.3.1_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <script src="./lib/jquery.validate.min.js"></script>
+    <script src="./lib/messages_pt_BR.min.js"></script>
+</body>
+</html>

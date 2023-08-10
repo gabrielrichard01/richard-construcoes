@@ -1,0 +1,124 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #bb0101;
+}
+
+header h1{
+    font-family: 'Bree Serif', serif;
+}
+
+
+#cabecalho .nav .nav-link.active{
+    background-color: #fff;
+    color: #bb0101;
+}
+
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover{
+    color: #000000;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 60vh
+}
+
+.section-title{
+    font-family: 'Bree Serif', serif;
+}
+
+.section-title span{
+    color: #bb0101;
+}
+
+.tab-content img{
+    height: 40vh;
+}
+
+.preco{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.preco span{
+    color: #bb0101;
+    font-size: 40px;
+}
+
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: #bb0101;
+}
+
+.nav-link{
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #bb0101;
+}
+
+.cartao{
+    border-radius: 8px;
+    border: 2px solid #bb0101;
+    margin-bottom: 8px;
+    width: 30%;
+}
+
+.card-promocoes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.imagem-promocoes img{
+    width: 98%;
+    height: 50vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media screen and (max-width: 900px) {
+    .cartao{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .cartao{
+        width: 100%;
+    }
+}
+
+.text-colored{
+    color: #bb0101;
+}
+
+a{
+    text-decoration: none;
+}
+
+.social-links{
+    list-style: none;
+    display: flex;
+}
+
+form textarea{
+    resize: none;
+}
+
+footer{
+    background-color: #bb0101;
+}
+
+footer p{
+    margin: 0;
+    color: #fff;
+}
